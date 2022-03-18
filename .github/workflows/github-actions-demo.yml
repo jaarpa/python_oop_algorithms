@@ -15,3 +15,8 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      
+      - name: pylinters
+        # You may pin to the exact commit or the version.
+        # uses: programmingwithalex/pylinters@1df1ccbb7a215c889244f98c2eab373228666cf7
+        uses: programmingwithalex/pylinters@v1.4.2
